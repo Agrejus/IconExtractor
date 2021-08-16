@@ -16,6 +16,7 @@ const config: webpack.Configuration = {
 
     // Set the naming convention of our bundles
     output: {
+        libraryTarget: 'commonjs',
         filename: 'index.js',
         path: path.resolve(__dirname, '../lib')
     },
