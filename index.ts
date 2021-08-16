@@ -11,7 +11,7 @@ const getPlatformIconProcess = () => {
     throw ('This platform (' + os.type() + ') is unsupported =(');
 }
 
-export const getIcon = (fileNameAndPath: string) => {
+export default (fileNameAndPath: string) => {
     return new Promise((resolve, reject) => {
 
         const exe = getPlatformIconProcess();

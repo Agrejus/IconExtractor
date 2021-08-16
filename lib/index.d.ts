@@ -1,1 +1,2 @@
-export declare const getIcon: (fileNameAndPath: string) => Promise<unknown>;
+declare const _default: (fileNameAndPath: string) => Promise<unknown>;
+export default _default;
