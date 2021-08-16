@@ -15,8 +15,6 @@ export const getIcon = (fileNameAndPath: string) => {
     return new Promise((resolve, reject) => {
 
         const exe = getPlatformIconProcess();
-        console.log('PATJ');
-        console.log(exe);
         const command = exec(`${exe} --path=\"${fileNameAndPath}\"`);
 
         command.stdout!.on("data", e => {
