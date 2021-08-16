@@ -1,4 +1,4 @@
 node_modules
 packages
 obj
-bin
+**/bin/Debug/
