@@ -1,9 +1,10 @@
 {
   "name": "icon-extractor",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Given a path, return base64 data of the icon used for that file",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
+  "bin": { "IconExtractor": "lib/.bin/IconExtractor.exe" },
   "scripts": {
     "build": "tsc"
   },

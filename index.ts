@@ -5,10 +5,9 @@ import { exec } from 'child_process';
 const getPlatformIconProcess = () => {
     if (os.type() == 'Windows_NT') {
         return path.join(__dirname, '../bin/IconExtractor.exe');
-        //Do stuff here to get the icon that doesn't have the shortcut thing on it
-    } else {
-        throw ('This platform (' + os.type() + ') is unsupported =(');
-    }
+    } 
+
+    throw ('This platform (' + os.type() + ') is unsupported =(');
 }
 
 export const getIcon = (fileNameAndPath: string) => {
