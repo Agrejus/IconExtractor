@@ -1,12 +1,12 @@
 {
   "name": "icon-extractor",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "Given a path, return base64 data of the icon used for that file",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
-  "bin": { "IconExtractor": "lib/.bin/IconExtractor.exe" },
   "scripts": {
-    "build": "tsc"
+    "build": "tsc",
+    "webpack": "webpack --config config/webpack.config.ts"
   },
   "repository": {
     "type": "git",
@@ -23,11 +23,17 @@
     "url": "https://github.com/ScienceVikings/IconExtractor/issues"
   },
   "homepage": "https://github.com/ScienceVikings/IconExtractor#readme",
-  "dependencies": {
-    "lodash": "^3.10.1",
-    "typescript": "4.2.4"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@types/node": "^16.6.1"
+    "@types/node": "^16.6.1",
+    "@types/tapable": "1.0.4",
+    "@types/webpack": "4.4.32",
+    "awesome-typescript-loader": "^5.2.1",
+    "file-loader": "^6.2.0",
+    "source-map-loader": "^3.0.0",
+    "ts-node": "^10.2.0",
+    "typescript": "4.2.4",
+    "webpack": "4.31.0",
+    "webpack-cli": "3.3.2"
   }
 }
